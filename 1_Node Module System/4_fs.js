@@ -24,5 +24,9 @@ const fs = require('fs')
 // fs.mkdirSync('NewDirectory')         
 // console.log('Directory Created');
 
-console.log(fs.existsSync('NewDirectoy'));
-console.log(fs.existsSync('NewDirectory'));
+// console.log(fs.existsSync('NewDirectoy'));
+// console.log(fs.existsSync('NewDirectory'));
+
+//Reading Directory
+console.log('Folder contents are ' + fs.readdirSync('NewDirectory'));   //Output in String Format (due to string concatenation)
+console.log('Folder contents are ', fs.readdirSync('NewDirectory'));    //Output in Array Format
