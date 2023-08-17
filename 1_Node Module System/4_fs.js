@@ -17,5 +17,9 @@ const fs = require('fs')
 // console.log('file appended');
 
 //If you WRITE/APPEND in a non-existing file, it will create file and write/append in it
-fs.writeFileSync('newfile.txt','writing in a new file using WriteFileSync')
-console.log('writing completed');
+// fs.writeFileSync('newfile.txt','writing in a new file using WriteFileSync')
+// console.log('writing completed');
+
+//DIRECTORIES
+fs.mkdirSync('NewDirectory')
+console.log('Directory Created');
