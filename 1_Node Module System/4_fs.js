@@ -5,5 +5,10 @@ const fs = require('fs')
 // console.log("Output -> " + file);
 
 //writing a file
-fs.writeFileSync('f2.txt',' adding this through WRITEFILESYNC')     //this overwrites the file
-console.log('file written');
+// fs.writeFileSync('f2.txt',' adding this through WRITEFILESYNC')     //this overwrites the file
+// console.log('file written');
+
+//deleting a file
+fs.unlinkSync('f3.txt')
+console.log('file deleted');
+
