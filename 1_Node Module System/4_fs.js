@@ -9,6 +9,9 @@ const fs = require('fs')
 // console.log('file written');
 
 //deleting a file
-fs.unlinkSync('f3.txt')
-console.log('file deleted');
+// fs.unlinkSync('f3.txt')
+// console.log('file deleted');
 
+//appending a file
+fs.appendFileSync('f1.txt',' appending using APPENDFILESYNC')
+console.log('file appended');
