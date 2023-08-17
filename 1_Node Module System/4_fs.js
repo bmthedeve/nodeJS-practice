@@ -13,5 +13,9 @@ const fs = require('fs')
 // console.log('file deleted');
 
 //appending a file
-fs.appendFileSync('f1.txt',' appending using APPENDFILESYNC')
-console.log('file appended');
+// fs.appendFileSync('f1.txt',' appending using APPENDFILESYNC')
+// console.log('file appended');
+
+//If you WRITE/APPEND in a non-existing file, it will create file and write/append in it
+fs.writeFileSync('newfile.txt','writing in a new file using WriteFileSync')
+console.log('writing completed');
