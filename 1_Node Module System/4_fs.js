@@ -24,9 +24,16 @@ const fs = require('fs')
 // fs.mkdirSync('NewDirectory')         
 // console.log('Directory Created');
 
+//Check whether the directory exists
 // console.log(fs.existsSync('NewDirectoy'));
 // console.log(fs.existsSync('NewDirectory'));
 
 //Reading Directory
-console.log('Folder contents are ' + fs.readdirSync('NewDirectory'));   //Output in String Format (due to string concatenation)
-console.log('Folder contents are ', fs.readdirSync('NewDirectory'));    //Output in Array Format
+// console.log('Folder contents are ' + fs.readdirSync('NewDirectory'));   //Output in String Format (due to string concatenation)
+// console.log('Folder contents are ', fs.readdirSync('NewDirectory'));    //Output in Array Format
+
+//Deleting Directory
+// fs.mkdirSync('ToBeDeletedDirectory')
+// console.log('directory created');
+fs.rmdirSync('ToBeDeletedDirectory')
+console.log('directory deleted');
