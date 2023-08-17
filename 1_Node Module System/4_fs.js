@@ -21,5 +21,8 @@ const fs = require('fs')
 // console.log('writing completed');
 
 //DIRECTORIES
-fs.mkdirSync('NewDirectory')
-console.log('Directory Created');
+// fs.mkdirSync('NewDirectory')         
+// console.log('Directory Created');
+
+console.log(fs.existsSync('NewDirectoy'));
+console.log(fs.existsSync('NewDirectory'));
